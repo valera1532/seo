@@ -1,0 +1,203 @@
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+    margin-bottom: 0;
+}
+
+
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+  
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+
+.read_sl .slick-list {
+    padding:0 0 0 0;
+}
+
+.read_sl .slick-slide {
+    margin: 0 12px 0 12px;
+}
+
+.our_clients_sl .slick-list {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding:0 0 0 0;
+}
+
+.our_clients_sl .slick-slide {
+    margin: 0 8px 0 8px;
+}
+
+.clients_sl .slick-list {
+    padding:0 0 0 0;
+}
+
+.clients_sl .slick-slide {
+    margin: 0 10px 0 10px;
+}
+
+.bestburger_sl .slick-list {
+    padding:140px 0 0 0;
+}
+
+.bestburger_sl .slick-slide {
+    margin: 0 0 0 0;
+}
+
+.s_service_sl .slick-list {
+    padding:0 0 0 0;
+}
+
+.s_service_sl .slick-slide {
+    margin: 0 0 0 0;
+}
+
+.sermtarif_sl .slick-list {
+    width: 83%;
+    margin: 0 auto;
+    padding:0 0 0 0;
+}
+
+.sermtarif_sl .slick-slide {
+    margin: 0 0 0 0;
+}
+
+.sf_sl .slick-list {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding:0 0 0 0;
+}
+
+.sf_sl .slick-slide {
+    margin: 0 0 0 0;
+}
+
+.tss_reklama_sl .slick-list {
+    padding:0 0 0 0;
+}
+
+.tss_reklama_sl .slick-slide {
+    margin: 0 0 0 0;
+}
+
+.raz_reklama_sl .slick-list {
+    padding:0 55% 0 0;
+}
+
+.raz_reklama_sl .slick-slide {
+    margin: 0 10px 0 10px;
+}

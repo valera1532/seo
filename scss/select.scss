@@ -1,0 +1,221 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.select {
+	min-width: 0;
+	position: relative;
+}
+
+.select__body {
+	position: relative;
+}
+
+.select__title {
+	color: inherit;
+	text-align: left;
+	border: 1px solid #5418a3;
+	background-color: #301d4e;
+	cursor: pointer;
+	width: 100%;
+	border-radius: 12px;
+	padding: 16px 24px;
+}
+
+.select__value {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	min-width: 0;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 0.625rem;
+}
+
+.select__value > * {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+}
+
+.select__value:after {
+	content: '';
+	-ms-flex-item-align: stretch;
+	-ms-grid-row-align: stretch;
+	align-self: stretch;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 10px;
+	flex: 0 0 10px;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	background: url(../images/slide-down.svg) center center no-repeat;
+}
+
+.select.select_seo-increase .select__value:after {
+	background: url(../images/seo-increase/slide-down.svg) center center no-repeat;
+}
+
+.select.select_seo-increase {
+	margin-bottom: 38px;
+}
+
+._select-open .select__value:after {
+	-webkit-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+
+._select-open .select__title {
+	border-radius: 0;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+
+.select__value._select-pseudo-label::before {
+	content: attr(data-pseudo-label);
+	opacity: 0.5;
+}
+
+.select__content {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+
+	color: #d0c1e8;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130.023%; /* 18.203px */
+}
+
+.select__text {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.select__input {
+	width: 100%;
+	background-color: transparent;
+	height: 100%;
+}
+
+.select__options {
+	color: #000;
+	position: absolute;
+	top: calc(100% - 0.0625rem);
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	min-width: 100%;
+	left: 0;
+	background-color: #301d4e;
+	border: 1px solid #5418a3;
+	max-height: 360px;
+	overflow: hidden;
+	padding-right: 4px;
+}
+
+.select__scroll {
+	overflow-y: auto;
+	overflow-x: hidden;
+	max-height: 360px;
+	width: 100%;
+
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	&::-webkit-scrollbar {
+		width: 4px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: #301d4e;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #8b7d7b;
+		border-radius: 12px;
+	}
+}
+
+.select__option {
+	text-align: left;
+	cursor: pointer;
+	padding: 12px 0;
+	margin: 0 25px;
+
+	color: #d0c1e8;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 119.523%; /* 16.733px */
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.select__option:hover {
+	color: #e63114;
+}
+
+.select__option:not(:last-child) {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.select__option._select-selected {
+	background-color: #eee;
+}
+
+.select__row {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.select_show-top .select__options {
+	top: auto;
+	bottom: calc(100% - 0.0625rem);
+	border: 1px solid #d9d9d9;
+	border-bottom: 0;
+	border-radius: 4px 4px 0 0;
+	padding: 5px 0px 10px 0px;
+}
+
+._select-tag {
+	cursor: pointer;
+}

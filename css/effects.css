@@ -1,0 +1,64 @@
+.hover-border {
+  transition: all 0.3s ease;
+}
+
+.hover-border:hover {
+  border: 1px solid #e63114;
+}
+
+.hover-gradient-border {
+  position: relative;
+}
+
+.hover-gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 22px;
+  padding: 1px;
+  background: linear-gradient(180deg, #5418a3 60%, rgba(55, 11, 33, 0) 80%, rgba(55, 11, 33, 0));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  transition: all 0.3s ease;
+}
+
+.hover-gradient-border:hover::before {
+  opacity: 1;
+  visibility: visible;
+  background: linear-gradient(225deg, #e63114 60%, #5418a3 80%, #5418a3);
+}
+
+.animation-floating .hover-animation-float {
+  animation: float-img 4s ease-in-out infinite;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.animation-completed .fade-out {
+  opacity: 1;
+  animation: fade-out ease 2s;
+}
+
+@keyframes float-img {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
